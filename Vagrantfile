@@ -65,8 +65,9 @@ Vagrant.configure("2") do |config|
     if ENV["ftp_proxy"]
       config.proxy.ftp     = ENV["ftp_proxy"]
     end
+    config.proxy.no_proxy = "#{sim_node_ip}"
     if ENV["no_proxy"]
-      config.proxy.no_proxy = ENV["no_proxy"]
+      config.proxy.no_proxy += "," + ENV["no_proxy"]
     end
   end
 
