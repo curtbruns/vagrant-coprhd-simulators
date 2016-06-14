@@ -23,7 +23,7 @@ Modify the sanity.conf (coprhd-controller/tools/tests/conf) file in two areas:
 1. HW\_SIMULATOR\_IP: Set this to the IP address of this VM, which is set in Vagrantfile  
 2. SIMULATOR\_CISCO\_MDS\_PW: Set this to "vagrant" as that is the root password for this VM
 
-To run the quick sanity tests, from the coprhd-controller/tools/tests directory:
+To run the quick sanity tests, from the coprhd-controller/tools/tests directory:  
 `% ./sanity conf/sanity.conf <ip_address_of_coprhd> quick`  
 NOTE: If you've changed the System/CoprHD default password of "ChangeMe", you should set the SYSTEM\_PASSWORD variable:  
 `% export SYSTEM_PASSWORD=<password>`  
